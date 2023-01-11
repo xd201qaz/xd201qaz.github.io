@@ -137,6 +137,98 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2023/01/11/红蓝攻防应急取证资源合集-1/" >红蓝攻防应急取证资源合集-1</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2023-01-11  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="RAD-amp-BAD-amp-ER-amp-EC"><a href="#RAD-amp-BAD-amp-ER-amp-EC" class="headerlink" title="RAD&amp;BAD&amp;ER&amp;EC"></a>RAD&amp;BAD&amp;ER&amp;EC</h1><p>​	 首先恭喜你发现了宝藏。本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件….etc…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目……..），内网渗透工具（隧道代理、密码提取…..）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。</p>
+<h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><p><strong>重点提醒：本项目工具来源于互联网，是否含带木马及后门请自行甄别！！Hvv来即，请大家提高警惕！！！</strong></p>
+<ol>
+<li><code>本项目所有内容,仅供学习和研究使用,请勿使用项目的技术手段用于非法用途,任何人造成的任何负面影响,与本人无关.</code></li>
+<li><code>本文档所有内容、新闻皆不代表本人态度、立场,如果有建议或方案,欢迎提交 issues</code></li>
+<li><code>不会收取任何广告费用,展示的所有工具链接与本人无任何利害关系</code></li>
+</ol>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><a href="#%E5%8D%8A%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">半&#x2F;全自动化利用工具</a></li>
+<li><a href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7">信息收集工具</a><ul>
+<li><a href="#%E8%B5%84%E4%BA%A7%E5%8F%91%E7%8E%B0%E5%B7%A5%E5%85%B7">资产发现工具</a></li>
+<li><a href="#%E5%AD%90%E5%9F%9F%E5%90%8D%E6%94%B6%E9%9B%86%E5%B7%A5%E5%85%B7">子域名收集工具</a></li>
+<li><a href="#%E7%9B%AE%E5%BD%95%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7">目录扫描工具</a></li>
+<li><a href="#%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7">指纹识别工具</a></li>
+<li><a href="#%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7">端口扫描工具</a></li>
+<li><a href="#burp%E6%8F%92%E4%BB%B6">Burp插件</a></li>
+<li><a href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6">浏览器插件</a></li>
+<li><a href="#%E9%82%AE%E7%AE%B1%E9%92%93%E9%B1%BC">邮箱&amp;钓鱼</a></li>
+<li><a href="#%E7%A4%BE%E5%B7%A5%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E7%B1%BB">社工个人信息收集类</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7">常用小工具</a></li>
+</ul>
+</li>
+<li><a href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">漏洞利用工具</a><ul>
+<li><a href="#%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E6%A1%86%E6%9E%B6%E5%B7%A5%E5%85%B7">漏洞扫描框架&#x2F;工具</a></li>
+<li><a href="#%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">中间件漏洞利用工具</a></li>
+<li><a href="#%E9%87%8D%E7%82%B9cms%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">重点cms利用工具</a></li>
+<li><a href="#%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">信息泄露利用工具</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">数据库利用工具</a></li>
+<li><a href="#%E7%88%86%E7%A0%B4%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">爆破利用工具</a></li>
+<li><a href="#%E5%85%A8%E7%BD%91%E5%AD%97%E5%85%B8%E6%94%B6%E9%9B%86">全网字典收集</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%84%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">常规漏洞利用工具</a></li>
+<li><a href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%A9%E7%94%A8%E5%B7%A5%E5%85%B7">反序列化利用工具</a></li>
+<li><a href="#%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7">代码审计辅助工具</a></li>
+</ul>
+</li>
+<li><a href="#%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7">内网渗透工具</a><ul>
+<li><a href="#%E6%8F%90%E6%9D%83%E9%A1%B9%E7%9B%AE">提权项目</a></li>
+<li><a href="#%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8%E5%B7%A5%E5%85%B7">横向移动工具</a></li>
+<li><a href="#shell%E6%89%98%E7%AE%A1%E5%B7%A5%E5%85%B7">shell托管工具</a></li>
+<li><a href="#%E5%AF%86%E7%A0%81%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7">密码提取工具</a></li>
+<li><a href="#%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7">隧道代理工具</a></li>
+<li><a href="#%E4%BC%98%E7%A7%80%E5%85%8D%E6%9D%80%E9%A1%B9%E7%9B%AE">优秀免杀项目</a></li>
+<li><a href="#%E6%9D%83%E9%99%90%E7%BB%B4%E6%8C%81%E5%B7%A5%E5%85%B7">权限维持工具</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BF%90%E7%BB%B4%E7%94%B2%E6%96%B9%E9%98%B2%E5%AE%88%E6%96%B9%E5%B7%A5%E5%85%B7">运维&amp;甲方&amp;防守方工具</a><ul>
+<li><a href="#linux%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%B7%A5%E5%85%B7">Linux应急响应工具</a></li>
+<li><a href="#windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%B7%A5%E5%85%B7">Windows应急响应工具</a></li>
+<li><a href="#%E5%86%85%E5%AD%98%E9%A9%AC%E6%9F%A5%E6%9D%80%E5%B7%A5%E5%85%B7">内存马查杀工具</a></li>
+<li><a href="#xxxx">xxxx</a></li>
+<li><a href="#%E6%BA%AF%E6%BA%90%E5%8F%8D%E5%88%B6%E5%B7%A5%E5%85%B7">溯源反制工具</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E5%85%A8%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86">安全资料整理</a><ul>
+<li><a href="#%E7%BA%A2%E8%93%9D%E8%B5%84%E6%96%99%E9%9B%86%E9%94%A6">红蓝资料集锦</a></li>
+<li><a href="#%E4%BA%91%E5%AE%89%E5%85%A8%E8%B5%84%E6%96%99">云安全资料</a></li>
+<li><a href="#%E9%9D%B6%E5%9C%BA%E6%B8%85%E5%8D%95">靶场清单</a></li>
+<li><a href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%8F%8A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA">基础设施及环境搭建</a></li>
+</ul>
+</li>
+</ul>
+<p>温馨提醒：不要沉迷于攻防而忘了吃饭喔~</p>
+<ul>
+<li>程序员在家做饭方法指南。<a target="_blank" rel="noopener" href="https://github.com/Anduin2017/HowToCook">https://github.com/Anduin2017/HowToCook</a></li>
+</ul>
+<h1 id="半-x2F-全自动化利用工具"><a href="#半-x2F-全自动化利用工具" class="headerlink" title="半&#x2F;全自动化利用工具"></a>半&#x2F;全自动化利用工具</h1>
+	
+	</div>
+  <a type="button" href="/2023/01/11/红蓝攻防应急取证资源合集-1/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2023/01/11/初恋的味道/" >初恋的味道</a>
 		</h3>
 		</div>
@@ -238,6 +330,8 @@
 		
 			<li><a href="/tags/爱情回忆录/">爱情回忆录<span>1</span></a></li>
 		
+			<li><a href="/tags/红蓝攻防应急取证资源/">红蓝攻防应急取证资源<span>1</span></a></li>
+		
 		 
 		</ul>
 	</div>
@@ -248,6 +342,10 @@
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2023/01/11/红蓝攻防应急取证资源合集-1/" ><i class="fa fa-file-o"></i>红蓝攻防应急取证资源合集-1</a>
+      </li>
     
       <li>
         <a href="/2023/01/11/初恋的味道/" ><i class="fa fa-file-o"></i>初恋的味道</a>
